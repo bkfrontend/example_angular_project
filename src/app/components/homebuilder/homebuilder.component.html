@@ -1,0 +1,23 @@
+<div class="home-builder">
+    <div class="col-md-12 title">
+        <h3>Homebuilder</h3>
+    </div>
+    <div class="col-md-12 content">
+        <div class="col-md-12 actions">
+            <button class="btn btn-sm btn-outline-success">Add items</button>
+            <div class="search">
+                <input class="" placeholder="Search">
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="col-md-12 items">
+            <app-home-builder-item
+                    *ngFor="let item of items"
+                    [item]="item"
+                    class="col-12 item"
+                    (onCompleted)="completed($event)"
+                    (onUnCompleted)="uncompleted($event)"
+            ></app-home-builder-item>
+        </div>
+    </div>
+</div>

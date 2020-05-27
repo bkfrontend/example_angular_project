@@ -1,0 +1,48 @@
+.check {
+  color: #28a745;
+}
+
+.uncheck {
+  color: #c7ccd0;
+}
+
+.fa-check-circle-o {
+  font-size: 2em;
+  font-weight: 100 !important;
+}
+
+label {
+  cursor: pointer;
+}
+
+.checkbox, .extra-info, .avatar, .info {
+  padding: 0 !important;
+  display: inline;
+}
+.checkbox {
+  margin-right: 10px;
+}
+.info {
+  .title {
+    font-size: 0.9em;
+  }
+  .desc {
+    font-size: 0.7em;
+    color: grey;
+  }
+}
+.row {
+  margin: 0;
+}
+
+.avatar {
+  img  {
+    border-radius: 50%;
+  }
+}
+
+.extra-info {
+  &:nth-child(0) {
+    color: red;
+  }
+}

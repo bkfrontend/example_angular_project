@@ -1,0 +1,44 @@
+.content {
+  padding: 0;
+  border: 1px #c7ccd0 solid;
+  border-radius: 2px;
+  .actions, .items {
+    padding: 0;
+  }
+
+  .actions {
+    padding: 4px 10px 12px 10px;
+    border-bottom: 1px #c7ccd0 solid;
+
+    .btn {
+      font-size: 1.12em;
+    }
+
+    .search {
+      float: right;
+      padding-top: 10px;
+      padding-right: 30px;
+      input {
+        width: 117px;
+        border: 0;
+      }
+    }
+  }
+  .items {
+    .item {
+      padding: 7px 10px 12px 10px;
+      display: block;
+      width: 100%;
+      &:not(:last-child) {
+        border-bottom: 1px #c7ccd0 solid;
+      }
+
+    }
+  }
+}
+
+
+.title {
+  padding: 0;
+  margin-bottom: 15px;
+}

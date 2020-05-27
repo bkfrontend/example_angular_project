@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  angular:
+    container_name: angular
+    build: ./
+    ports:
+      - "127.0.1.23:80:80"
+    volumes:
+      - ../:/code
+    networks:
+      - angular
+
+networks:
+  angular:
